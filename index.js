@@ -32,5 +32,11 @@ app.put('/api/songs/:id', (req, res) => {
     const id = req.params.id;
     const songPropertiesToUpdate = req.body;
     const updatedSong = repoContext.songs.updateSong(id, songPropertiesToUpdate);
-    return res.send(updatedSong)
+    return res.send(updatedSong);
+});
+
+app.delete('/api/songs/:id', (req, res) => {
+    const id = req.params.id;
+    const updatedDataSet = repoContext.songs.deleteSong(id);
+    return res.send(updatedDataSet);
 });
