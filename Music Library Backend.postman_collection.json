@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "ccefb366-866d-4204-a68b-b82d0d5b825f",
+		"name": "Music Library Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all songs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET single song",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 24,\n    \"title\": \"Natural Anthem\",\n    \"album\": \"Give Up\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs/24",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST single song",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Hello World\",\n    \"album\": \"Wake Up\",\n    \"artist\": \"The Postal Service\",\n    \"genre\": \"Alternative Indie\",\n    \"releaseDate\": \"02/18/2003\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT single song genre & releaseDate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Hello World\",\n    \"album\": \"Wake Up\",\n    \"artist\": \"The Postal Service\",\n    \"genre\": \"Pop\",\n    \"releaseDate\": \"06/24/1990\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE single song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs/25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs",
+						"25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE single song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/songs/26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"songs",
+						"26"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
